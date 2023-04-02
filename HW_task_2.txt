@@ -1,0 +1,67 @@
+GitHub. HW_2
+	Precondition: создать репозиторий Git, склонировать на локальный 
+	git clone https://github.com/LikhatskayaV/GIT.git
+1. На локальном репозитории сделать ветки для:
+- Postman 		git branch Postman
+- Jmeter		git branch Jmeter
+- CheckLists		git branch CheckLists
+- Bug Reports		git branch Bug_Reports
+- SQL			git branch SQL
+- Charles		git branch Charles
+- Mobile testing	git branch Mobile_testing
+
+	? проверить какие ветки созданы 
+		$ git branch
+  		Bug_Reports
+  		Charles
+  		CheckLists
+  		Jmetr
+  		Mobile_testing
+  		Postman
+  		SQL
+		* main (текущая)
+
+2. Запушить все ветки на внешний репозиторий
+		$ git push origin --all
+		Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+		To https://github.com/LikhatskayaV/GIT.git
+ 		* [new branch]      Bug_Reports -> Bug_Reports
+ 		* [new branch]      Charles -> Charles
+ 		* [new branch]      CheckLists -> CheckLists
+ 		* [new branch]      Jmetr -> Jmetr
+ 		* [new branch]      Mobile_testing -> Mobile_testing
+ 		* [new branch]      Postman -> Postman
+ 		* [new branch]      SQL -> SQL
+
+3. В ветке Bug_Reports сделать текстовый документ со структурой баг репорта:
+git checkout Bug_Reports
+vim BR_structure.txt
+
+4. Запушить структуру багрепорта на внешний репозиторий
+git add BR_structure.txt
+git commit -m "br"
+git push -u origin Bug_Reports
+
+5. Вмержить ветку Bag Reports в Main
+git checkout main
+git merge Bug_Reports
+
+6. Запушить main на внешний репозиторий.
+git push
+
+7. В ветке CheckLists набросать структуру чек листа.
+git checkout CheckLists
+vim CH_L_structure.txt
+
+8. Запушить структуру на внешний репозиторий
+git add CH_L_structure.txt
+git commit -m "chl_str"
+git push -u origin CheckLists
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+зайти в репазиторий Git, + compare pull request и тд до merge
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+git pull (в ветке CheckLists)
+git checkout main
+git pull (в ветке main).

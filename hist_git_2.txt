@@ -1,0 +1,28 @@
+  552  git clone https://github.com/LikhatskayaV/GIT.git
+  555  cd GIT/
+  556  git branch Postman
+  560  git branch Jmetr
+  561  git branch CheckLists
+  562  git branch Bug_Reports
+  563  git branch SQL
+  564  git branch Charles
+  565  git branch Mobile_testing
+  566  git branch
+  568  git push origin --all
+  570  git checkout Bug_Reports 
+  571  vim BR_structure.txt
+  572  git add BR_structure.txt 
+  573  git commit -m "br_str" 
+  577  git push -u origin Bug_Reports 
+  578  git checkout main
+  579  git merge Bug_Reports 
+  580  git push
+  581  git checkout CheckLists 
+  582  vim CH_L_structure.txt
+  583  git commit -m "chl_str"
+  584  git add CH_L_structure.txt 
+  585  git commit -m "chl_str"
+  587  git push -u origin CheckLists 
+  588  git pull
+  589  git checkout main 
+  590  git pull

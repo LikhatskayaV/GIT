@@ -1,0 +1,10 @@
+1.  Bug id;
+2.  Title;
+3.  Description;
+4.  Preconditions;
+5.  Steps;
+6.  Actual_result
+7.  Expected result;
+8.  Priority;
+9.  Reproducibility;
+10. Attachmants.

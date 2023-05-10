@@ -1,4 +1,3 @@
-2) i want to chAnge conflict line
-1) add sec line
+1) add first line
 111
-
+2) i want to chAnge conflict line
